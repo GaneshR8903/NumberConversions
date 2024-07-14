@@ -7,11 +7,11 @@ public class Decimal2Hexadecimal {
             int decimal=sc.nextInt();
             String hex=Integer.toHexString(decimal).toUpperCase();
             System.out.println("Hexadecimal value of "+decimal+" using bulitin function is :"+hex);
-            String hex1 = decimalToBinary(decimal);
+            String hex1 = decimalToHexadecimal(decimal);
             System.out.println("Hexadecimal value of " + decimal + " without inbuilt function is: " + hex1);
         }
     }
-    public static String decimalToBinary(int decimal){
+    public static String decimalToHexadecimal(int decimal){
         if(decimal==0){
             return "0";
     }

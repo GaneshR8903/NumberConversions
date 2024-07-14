@@ -7,11 +7,11 @@ public class Decimal2Octal{
             int decimal=sc.nextInt();
             String octal=Integer.toOctalString(decimal);
             System.out.println("Octal value of "+decimal+" with builtin function is :"+octal);
-            String octal1 = decimalToBinary(decimal);
+            String octal1 = decimalToOctal(decimal);
             System.out.println("Octal value of " + decimal + " without inbuilt function is: " + octal1);
         }
     }
-    public static String decimalToBinary(int decimal){
+    public static String decimalToOctal(int decimal){
         if(decimal==0){
             return "0";
     }
